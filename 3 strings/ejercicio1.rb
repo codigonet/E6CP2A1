@@ -5,3 +5,9 @@
 
 cadena = 'Hola Mundo!'
 caracter = 'o'
+
+def exist?(cad, car)
+  cad.include?(car)
+end
+
+print exist?(cadena, caracter)

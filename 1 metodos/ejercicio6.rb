@@ -6,13 +6,12 @@
 # *****
 # *****
 
-def draw_line(size)
-  '*' * size
+def draw_line(veces)
+  puts '*' * veces
 end
 
-def draw_lines(size)
-  size.times { }
+def draw_lines(filas)
+  filas.times { draw_line filas }
 end
 
-draw_line 2
-draw_lines 10
+draw_lines 5

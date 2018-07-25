@@ -5,4 +5,16 @@
 # 4. Mostrar en pantalla todos los elementos junto con un índice.
 # 5. Mostrar en pantalla todos los elementos que se encuentren en una posición par.
 
-arreglo = [1,2,3,9,1,4,5,2,3,6,6]
+arreglo = [1,2,3,9,1,4,5,2,3,6,16]
+
+puts arreglo[0]
+puts arreglo.first
+puts arreglo.last
+puts arreglo
+arreglo.each_with_index do |item, i|
+  puts "#{i} - #{item}"
+end
+
+arreglo.each_with_index do |item, i|
+  puts "#{i} - #{item}" if i.even?
+end
